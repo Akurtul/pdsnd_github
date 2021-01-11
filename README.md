@@ -5,7 +5,7 @@
 Bikeshare Project
 
 ### Description
-This is Udacity project for Python course to used in git project
+Github Project: This is Udacity project for Python course to used in git project
 
 ### Files used
 chicago.csv
