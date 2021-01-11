@@ -36,7 +36,7 @@ def get_filters():
         if day.lower() in ['all', 'monday', 'tuesday', 'wednesday', 'thursday','friday', 'saturday', 'sunday']:
             break
 
-    print('--o'*20)
+    print('--o-'*15)
     return city, month, day
 
 
@@ -98,7 +98,7 @@ def time_stats(df):
     print(df['Start Time'].dt.hour.mode()[0])
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('--o'*20)
+    print('--o-'*15)
 
 
 def station_stats(df):
@@ -120,7 +120,7 @@ def station_stats(df):
     print(df.groupby(['Start Station', 'End Station']).size().nlargest(1))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('--o'*20)
+    print('--o-'*15)
 
 
 def trip_duration_stats(df):
@@ -138,7 +138,7 @@ def trip_duration_stats(df):
     print(datetime.timedelta(seconds=int(df['Trip Duration'].mean())))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('--o'*20)
+    print('--o-'*15)
 
 
 def user_stats(df):
@@ -168,7 +168,7 @@ def user_stats(df):
         print('Our data does not include year of birth!..')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('--o'*20)
+    print('--o-'*15)
 
 def disp_data(df):
     """Raw data is displayed upon request by the user"""
@@ -187,7 +187,7 @@ def disp_data(df):
             count +=5
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('--o'*20)
+    print('--o-'*15)
 
 
 def main():
